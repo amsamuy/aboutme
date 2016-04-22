@@ -1,86 +1,116 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: LightGray;
 }
-a {
-	/* Typography Declrations */
-	font-weight: bold;
-	text-decoration: none;
-	color: #FFCF33;
+div {
+    border: 0px solid Chocolate;
 }
 
-a:hover {
-	/* Tyopography Declarations */
-	color: #FF3D81;
-}
-
-a:visited {
-	/* Typography Declarations */
-	color: #FFE76D;
-}
-
-.masthead-heading,
-.masthead-intro,
-.content-footer{
-  text-align:center;
-}
+/* Navigation Section */
 
 .masthead {
-  padding: 6em 0;
-  background-image: url(https://images.unsplash.com/photo-1449057528837-7ca097b3520c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=c4aa76a6ccb14392f36bbfdbbef74da2);
+    color: #fff;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    text-align: center;
+}
+.masthead h1{
+    font-size: 70px;
+}
+
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+.top-navigation > .content {
+    width: 970px;
+    height: 70px;
+    margin: 0 auto;
+}
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: solid 1em #FFCF33;
+    height: 15rem;
+    overflow: auto;
+ 
 }
-
-.masthead-intro {
-    margin-bottom: 0.1em;
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-}
-
-.masthead-heading {
-    margin-top: -0.2em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-.social > li {
-    display: inline-block;
-}
-.introduction-section > p,
-.location-section > p,
-.content-footer > p {
-    /* Typography Declarations */
+ .introduction h1, .introduction h3{
+    color: white;
+    text-align: center;
     font-weight: 300;
-    letter-spacing: 0.05em;
 }
-.questions-section > h2 {
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
-    color: #DB8916;
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
 }
-section > h1 {
-    margin-top: 2em;
+.content {
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
 }
-.content-footer {
-  /* Red, Green, Blue: #RRGGBB */
-  background-color: #CC6C00;
-  color: #FFFFFF;
-  padding: 1em 0;
+.buttons {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+}
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+	background:#ff0000;
+}
+.cases .projects li{
+    width: 30%;
+    display: inline-block;
+    padding: 5px;
+    /* styles to assist with debugging */
+    box-sizing: border-box;
+    height: 4em;
+}
+.icons li {
+    display: inline-block;
+     margin-left: 30px;
+}
+.cases h2, .content h3, .social .social h5, .content{
+   text-align: center;
 }
