@@ -5,25 +5,35 @@ html {
   box-sizing: inherit;
 }
 body {
-    background-color: LightGray;
+    background-color: White;
 }
 div {
     border: 0px solid Chocolate;
+}
+.projects img {
+   padding:1px;
+   border:1px solid #4F628E;
+   background-color:#4F628E;
 }
 
 /* Navigation Section */
 
 .masthead {
-    color: #fff;
+    /*background-image: url(images/am_logo.jpg) center center no-repeat;*/ 
+    color: #000;
+    height:200px;
     font-family: "Gentium Book Basic", Georgia, serif;
     text-align: center;
+    
 }
 .masthead h1{
     font-size: 70px;
 }
-
+.masthead p{
+    margin-top: 0;
+}
 .top-navigation {
-    background-color: #fff;
+    background-color: #7887AB;
     position: fixed;
 	width: 100%;
 	z-index: 9999;
@@ -36,7 +46,7 @@ div {
 .top-navigation .links {
     float: right;
     font-family: 'Roboto', sans-serif;
-    color: #838994;
+    color: white;
     font-size: 16px;
     margin-top: 25px;
     -webkit-font-smoothing: antialiased;
@@ -55,50 +65,32 @@ div {
 }
 
 
-.introduction {
-    background-image: url('../images/first-background.jpg');
+#introduction {
+    background-color: #45628E;
+    /*background-image: url('../images/hfgs_bookclub.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 15rem;
-    overflow: auto;
+    background-size: cover;*/
+    height: 100% ;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
  
 }
- .introduction h1, .introduction h3{
+ #introduction h1, #introduction h3{
     color: white;
     text-align: center;
     font-weight: 300;
 }
-.introduction .buttons {
+#introduction {
     color: white;
     text-align: center;
-    margin-top: 1.563rem;
+    font-weight: 100
+    /*margin-top: 1.563rem;*/
 }
-.content {
-	padding: 0 0.938rem;
-	margin: 0 auto;
-	min-width: 37.5rem;
-}
-.buttons {
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-}
-button {
-    width: 9.688rem;
-    background-color: #f15a29;
-    border-color: #f15a29;
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    color: white;
-    font-size: 1.125rem;
-}
-button:hover {
-	background:#ff0000;
-}
+
 .cases .projects li{
     width: 30%;
     display: inline-block;
@@ -109,8 +101,12 @@ button:hover {
 }
 .icons li {
     display: inline-block;
-     margin-left: 30px;
+    margin-left: 20px;
 }
 .cases h2, .content h3, .social .social h5, .content{
    text-align: center;
 }
+.caption h3{
+    color: #4F628E;
+}
+
